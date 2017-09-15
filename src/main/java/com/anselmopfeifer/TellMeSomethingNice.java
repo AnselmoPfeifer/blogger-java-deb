@@ -1,4 +1,4 @@
-package com.github.sannies.bloggerjavadeb;
+package com.anselmopfeifer;
 
 public class TellMeSomethingNice {
     public static void main(String[] args) {
