@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.anselmopfeifer</groupId>
-    <artifactId>building-java7</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <name>building-java7</name>
+    <artifactId>building-oracle-java7</artifactId>
+    <version>1.0</version>
+    <name>building-oracle-java7</name>
     <description>Build package deb for install Oracle Java 7 (deprecated)</description>
 
     <build>
@@ -26,7 +26,7 @@
                             <transformers>
                                 <transformer
                                         implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>com.anselmopfeifer.TellMeSomethingNice</mainClass>
+                                    <mainClass>com.anselmopfeifer.Hello</mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>
@@ -66,10 +66,11 @@
 
         </plugins>
     </build>
+
     <distributionManagement>
         <snapshotRepository>
             <id>snapshots</id>
-            <url>http://localhost:8081/nexus/content/repositories/snapshots</url>
+            <url>http://localhost:8081/content/repositories/snapshots</url>
         </snapshotRepository>
     </distributionManagement>
 
